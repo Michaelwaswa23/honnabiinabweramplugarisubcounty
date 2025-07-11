@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Hon. Nabii Nabwera</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    nav, footer {
+      background-color: #ff6a00;
+      color: white;
+      padding: 20px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      padding-left: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .header {
+      background: #fff3e6;
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    .header h1 {
+      font-size: 2.8rem;
+      color: #ff6a00;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff5e6;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #d84e00;
+    }
+    .contact-form label {
+      display: block;
+      margin-top: 10px;
+    }
+    .contact-form input, .contact-form textarea, .contact-form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ff6a00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #e65c00;
+    }
+    .comment-display {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .footer-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .footer-section h3 {
+      color: #ffd1a6;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      border-top: 1px solid #ffd1a6;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="vision.html">Vision & Mission</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="super.html">Super 5G Miracles</a></li>
+    <li><a href="contact.html">your thoughts</a></li>
+  </ul>
+</nav>
+
+<div class="header">
+  <h1>Let Us Know What You Think</h1>
+  <p>Your voice shapes Lugari's future. Share your thoughts, ideas, or concerns below.</p>
+</div>
+
+<div class="contact-form">
+  <h2>Leave a Comment</h2>
+  <form id="commentForm">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="ward">Your Ward:</label>
+    <select id="ward" required>
+      <option value="">--Select Ward--</option>
+      <option value="Lumakanda">Lumakanda</option>
+      <option value="Mautuma">Mautuma</option>
+      <option value="Lwandeti">Lwandeti</option>
+      <option value="Chekalini">Chekalini</option>
+      <option value="Chevaywa">Chevaywa</option>
+      <option value="Lugari">Lugari</option>
+    </select>
+
+    <label for="comment">Your Comment:</label>
+    <textarea id="comment" rows="5" required></textarea>
+
+    <button type="submit">Post Comment</button>
+  </form>
+</div>
+
+<div class="comment-display" id="displayComments">
+  <h3>Recent Comments:</h3>
+  <div id="commentsContainer"></div>
+</div>
+<footer style="background-color: #000; color: #fff;">
+  <div class="footer-container" style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto; padding: 40px 20px;">
+    
+    <div class="footer-section" style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+      <h3 style="color: #fff;">About Lugari</h3>
+      <p>Lugari is one of Kakamega’s fastest-growing constituencies, driven by innovation, youth, agriculture, and community spirit.</p>
+    </div>
+
+    <div class="footer-section" style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+      <h3 style="color: #fff;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="about.html" style="color: #ccc; text-decoration: none;">About the MP</a></li>
+        <li><a href="vision.html" style="color: #ccc; text-decoration: none;">Vision & Mission</a></li>
+        <li><a href="projects.html" style="color: #ccc; text-decoration: none;">Projects</a></li>
+        <li><a href="super.html" style="color: #ccc; text-decoration: none;">Super 5G Miracles</a></li>
+        <li><a href="gallery.html" style="color: #ccc; text-decoration: none;">Gallery</a></li>
+        <li><a href="contact.html" style="color: #ccc; text-decoration: none;">your thoughts</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section" style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+      <h3 style="color: #fff;">Contact Info</h3>
+      <p>Email: info@lugari.go.ke</p>
+      
+      <p>Office: Lumakanda Town, Kakamega County</p>
+
+      <p style="margin-top: 10px;">For more updates, follow <strong>Hon. Nabii Nabwera</strong>:</p>
+      <div class="social-icons" style="margin-top: 10px; display: flex; gap: 15px;">
+        <a href="https://www.facebook.com/share/15csqeqcZ2/?mibextid=qi2Omg" target="_blank" title="Facebook" style="color: #fff;"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/nabiinabwera5G?t=G8dA5z8mrC1on9ww73ViDg&s=09" target="_blank" title="X" style="color: #fff;"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.tiktok.com/@nabiinabwera?_t=ZM-8xw3lTtzjtA&_r=1" target="_blank" title="TikTok" style="color: #fff;"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/hon.nabweranabiioffial1?igsh=YzljYTk1ODg3Zg==" target="_blank" title="Instagram" style="color: #fff;"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom" style="text-align: center; padding: 10px; color: #ccc; border-top: 1px solid #444;">
+    &copy; 2025 Lugari Constituency | Hon. Nabii Nabwera | Powered by ODM Kenya
+  </div>
+</footer>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+
+<script>
+  const form = document.getElementById('commentForm');
+  const commentsContainer = document.getElementById('commentsContainer');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const ward = document.getElementById('ward').value;
+    const comment = document.getElementById('comment').value;
+    const now = new Date();
+    const timestamp = now.toLocaleString('en-KE', {
+      dateStyle: 'medium',
+      timeStyle: 'short'
+    });
+
+    const commentDiv = document.createElement('div');
+    commentDiv.style.borderTop = '1px solid #ccc';
+    commentDiv.style.padding = '10px 0';
+
+    const repliesDiv = document.createElement('div');
+    repliesDiv.classList.add('replies');
+    repliesDiv.style.marginTop = '10px';
+    repliesDiv.style.marginLeft = '20px';
+
+    commentDiv.innerHTML = `
+      <strong>${name}</strong> (${ward})<br>
+      ${comment}<br>
+      <small style="color:gray;">${timestamp}</small><br>
+      <button class="replyBtn">Reply</button>
+    `;
+
+    commentDiv.appendChild(repliesDiv);
+    commentsContainer.prepend(commentDiv);
+    form.reset();
+  });
+
+  commentsContainer.addEventListener('click', function(e) {
+    if (e.target.classList.contains('replyBtn')) {
+      const parentComment = e.target.parentElement;
+      const repliesDiv = parentComment.querySelector('.replies');
+
+      if (!parentComment.querySelector('.replyForm')) {
+        const replyForm = document.createElement('form');
+        replyForm.classList.add('replyForm');
+        replyForm.innerHTML = `
+          <input type="text" placeholder="Your Name" required style="width: 45%; margin-right: 10px;" />
+          <input type="text" placeholder="Your Ward" required style="width: 45%;" /><br><br>
+          <textarea rows="2" placeholder="Write a reply..." required style="width: 100%;"></textarea><br>
+          <button type="submit" style="margin-top: 5px;">Post Reply</button>
+        `;
+        repliesDiv.appendChild(replyForm);
+
+        replyForm.addEventListener('submit', function(ev) {
+          ev.preventDefault();
+          const inputs = replyForm.querySelectorAll('input');
+          const replyName = inputs[0].value;
+          const replyWard = inputs[1].value;
+          const replyText = replyForm.querySelector('textarea').value;
+          const replyTime = new Date().toLocaleString('en-KE', {
+            dateStyle: 'medium',
+            timeStyle: 'short'
+          });
+
+          const replyHTML = document.createElement('div');
+          replyHTML.style.marginTop = '10px';
+          replyHTML.innerHTML = `<strong>${replyName}</strong> (${replyWard})<br>${replyText}<br><small style="color:gray;">${replyTime}</small>`;
+          repliesDiv.appendChild(replyHTML);
+          replyForm.remove();
+        });
+      }
+    }
+  });
+</script>
+
+</body>
+</html>

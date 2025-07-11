@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Projects – Hon. Nabii Nabwera</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header, nav {
+      background-color: #ff6a00;
+      color: white;
+      padding: 20px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      padding-left: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #d84e00;
+      border-bottom: 2px solid #ffd1a6;
+      padding-bottom: 5px;
+    }
+    .project-section {
+      margin-bottom: 60px;
+    }
+    .project {
+      background-color: #fff5e6;
+      border-left: 5px solid #ff6a00;
+      margin-bottom: 20px;
+      padding: 15px 20px;
+      border-radius: 6px;
+    }
+    .project h3 {
+      color: #d84e00;
+    }
+    .project p {
+      margin: 5px 0 10px;
+    }
+    .project img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+    footer {
+      background: #111;
+      color: white;
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+    .footer-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .footer-section h3 {
+      color: #ff6a00;
+      margin-bottom: 15px;
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+    .footer-section ul li a {
+      color: #eee;
+      text-decoration: none;
+    }
+    .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      margin-top: 30px;
+      border-top: 1px solid #444;
+      font-size: 0.95rem;
+    }
+    .social-icons a {
+      color: white;
+      margin-right: 10px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slider-track .slide");
+  const sliderTrack = document.querySelector(".slider-track");
+  const slideWidth = 100 + 1; // 100% width + margin if any
+
+  function moveSlide(direction) {
+    slideIndex += direction;
+    if (slideIndex < 0) slideIndex = slides.length - 1;
+    if (slideIndex >= slides.length) slideIndex = 0;
+    const scrollAmount = slideIndex * (slides[0].offsetWidth + 10);
+    sliderTrack.style.transform = `translateX(-${scrollAmount}px)`;
+  }
+</script>
+
+<body>
+  <header>
+    <h1>Development Projects – Hon. Nabii Nabwera</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="vision.html">Vision & Mission</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="super.html">Super 5G Miracles</a></li>
+      <li><a href="contact.html">your thoughts</a></li>
+    </ul>
+  </nav>
+<div class="project-section" style="max-width: 1000px; margin: 50px auto;">
+  <h2 style="text-align: center; font-size: 28px; margin-bottom: 30px; border-bottom: 2px solid #ccc; padding-bottom: 10px; color: #333;">
+    operation ondoa matope, education and training programs
+  </h2>
+    <div class="project" style="max-width: 900px; margin: 30px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+      <p>
+        <strong>Operation Ondoa Matope</strong> is a bold, community-driven education infrastructure initiative launched by Hon. Nabii Nabwera to permanently eliminate the use of mud-walled classrooms ("matope") across public schools in Lugari Constituency. This strategic intervention was informed by years of neglect in rural education infrastructure, where thousands of learners were forced to study in unsafe, poorly ventilated, and unhygienic mud structures that collapsed during heavy rains or were infested with jiggers. The operation seeks to restore dignity to learners and teachers by replacing these substandard classrooms with safe, modern, and child-friendly facilities. Under this operation, Hon. Nabwera, in partnership with county authorities, the Hongera Foundation, and grassroots communities, has overseen the construction of permanent classrooms built with brick and mortar, fitted with rain gutters, cement floors, lockable windows, tiled roofing, and furnished with desks and teaching materials. Schools such as Mukavane Primary (Chekalini Ward), Makhukhuni Primary (Chevaywa Ward), and the transformation of Lake Basin, Mahiga, and Panpaper Schools are direct beneficiaries of this program. Learners in these schools have transitioned from the threat of collapsing mud walls to well-lit, ventilated environments conducive to concentration and academic excellence. Beyond physical construction, the operation has contributed to improved attendance, boosted learner morale, enhanced teacher retention, and restored parental trust in public education. Operation Ondoa Matope is not just a construction project — it is a movement to reclaim the future of Lugari’s children, ensuring equitable access to quality learning environments regardless of socio-economic background.
+      </p>
+
+      <!-- First row: Lake Basin Video + 2 Mahiga Images -->
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+        <div style="flex: 1 1 320px;">
+          <video width="100%" controls>
+            <source src="lakebasin.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 10px; justify-content: center;">
+          <img src="mahiga1.jpg" alt="Mahiga 1" style="width: 100%; max-height: 160px; height: auto; border-radius: 8px;" />
+          <img src="mahiga2.jpg" alt="Mahiga 2" style="width: 100%; max-height: 160px; height: auto; border-radius: 8px;" />
+        </div>
+      </div>
+
+      <!-- Second row: Panpaper Video + 3 Mahiga Images -->
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
+        <div style="flex: 1 1 320px;">
+          <video width="100%" controls>
+            <source src="panpaper.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 10px; justify-content: center;">
+          <img src="mahiga3.jpg" alt="Mahiga 3" style="width: 100%; max-height: 120px; height: auto; border-radius: 8px;" />
+          <img src="mahiga4.jpg" alt="Mahiga 4" style="width: 100%; max-height: 120px; height: auto; border-radius: 8px;" />
+          <img src="mahiga5.jpg" alt="Mahiga 5" style="width: 100%; max-height: 120px; height: auto; border-radius: 8px;" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modern Libraries -->
+    <div class="project" style="max-width: 900px; margin: 30px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+      <h3>Modern Libraries</h3>
+      <p>
+        In a bold move to promote a reading culture and digital literacy among high school learners, Hon. Nabii Nabwera commissioned the construction of a fully equipped modern library at Forestal Secondary School in Lugari Constituency. This state-of-the-art facility marks a significant milestone in the constituency’s education transformation journey. The library is designed not only as a traditional book repository but also as a multifunctional learning hub with designated areas for reading, digital research, group discussions, and mentorship sessions. Equipped with shelves of academic texts, revision guides, career exploration materials, and digital access points, the facility serves over 700 students at Forestal and also benefits neighboring day schools that lack adequate library infrastructure. Students now have access to a quiet, conducive space to study and explore knowledge beyond the classroom, while teachers have access to valuable teaching aids and instructional materials. Since its launch, Forestal has reported improved KCSE performance, particularly in languages, sciences, and humanities, attributed to extended library use. The Modern Libraries initiative reinforces Hon. Nabwera’s commitment to bridging the knowledge gap and preparing Lugari youth for competitive academic and career opportunities in the 21st century.
+      </p>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 20px;">
+        <img src="lib1.jpg" alt="Library 1" style="width: 200px; height: auto; border-radius: 8px;" />
+        <img src="lib2.jpg" alt="Library 2" style="width: 200px; height: auto; border-radius: 8px;" />
+        <img src="lib3.jpg" alt="Library 3" style="width: 200px; height: auto; border-radius: 8px;" />
+        <img src="lib4.jpg" alt="Library 4" style="width: 200px; height: auto; border-radius: 8px;" />
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+    
+ <div class="project" style="max-width: 900px; margin: auto; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+  <h3>KCSE Mentorship</h3>
+  <p>
+Hon. Nabii Nabwera has championed a transformative KCSE Mentorship Program aimed at equipping Form Four candidates across Lugari Constituency with the tools they need to succeed both academically and in life beyond school. Through this initiative, over 600 students have benefited from intensive career guidance forums, motivational talks, academic counseling, and mentorship sessions led by professionals from various sectors. Recognizing that success in education also relies heavily on physical well-being, he further introduced a monthly fortified porridge breakfast program in selected schools. This nutritional intervention addressed hunger-related absenteeism and boosted energy levels during morning study sessions. Teachers and school administrators reported a remarkable 25% increase in daily attendance, while grade retention improved from 65% to an impressive 91% within just one academic year. The mentorship also incorporated spiritual and emotional support activities such as prayer breakfasts, helping learners build confidence and resilience ahead of national exams. Through these sustained efforts, Hon. Nabwera has demonstrated a deep commitment to improving education outcomes, reducing school dropout rates, and nurturing a generation of well-rounded, focused, and inspired young people ready to transition successfully into college, vocational training, or the job market.
+</p>
+
+
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 10px;">
+    <img src="breakfast.jpg" alt="KCSE Mentorship 1" style="width: 280px; height: auto; border-radius: 8px;" />
+    <img src="breakfast2.jpg" alt="KCSE Mentorship 2" style="width: 280px; height: auto; border-radius: 8px;" />
+    <img src="breakfast3.jpg" alt="KCSE Mentorship 3" style="width: 280px; height: auto; border-radius: 8px;" />
+    <img src="breakfast4.jpg" alt="KCSE Mentorship 4" style="width: 280px; height: auto; border-radius: 8px;" />
+    <img src="breakfast5.jpg" alt="KCSE Mentorship 5" style="width: 280px; height: auto; border-radius: 8px;" />
+    <img src="breakfast6.jpg" alt="KCSE Mentorship 6" style="width: 280px; height: auto; border-radius: 8px;" />
+    <img src="breakfast8.jpg" alt="KCSE Mentorship 7" style="width: 280px; height: auto; border-radius: 8px;" />
+  </div>
+</div>
+
+
+    <div class="project" style="max-width: 900px; margin: 30px auto; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+  <h3>Ward Bursaries</h3>
+  <p>
+    Hon. Nabii Nabwera has remained deeply committed to ensuring that no child is left behind due to lack of school fees. Through a well-structured and transparent Ward Bursary Program, he has facilitated access to education for over 1,500 students across the constituency. These bursaries have covered learners in secondary schools, Technical and Vocational Education and Training (TVET) institutions, and public universities. A deliberate focus was placed on supporting the most vulnerable learners—including more than 200 orphans and children from economically disadvantaged households. The bursary allocation process has been community-driven, with involvement from school heads, local administrators, and ward representatives to ensure fairness and transparency. By easing the financial burden on parents and guardians, this program has not only kept students in school but also improved academic stability, reduced dropout rates, and enhanced overall educational outcomes in Lugari Constituency.
+  </p>
+</div>
+
+<div class="project-section" style="max-width: 1000px; margin: 50px auto;">
+  <h2 style="text-align: center; font-size: 28px; margin-bottom: 30px; border-bottom: 2px solid #ccc; padding-bottom: 10px; color: #333;">
+    ICT & Digital Transformation
+  </h2>
+
+  <!-- Digital Literacy Labs -->
+  <div class="project" style="max-width: 900px; margin: 30px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+    <h3>Digital Literacy Labs</h3>
+    <p>
+      In a strategic move to align Lugari Constituency with the national digital literacy agenda, Hon. Nabii Nabwera facilitated the installation of fully equipped computer labs in key educational institutions across the region. Beneficiary schools include Chevaywa TVC, Manyonyi Girls, Chekalini Mixed Secondary, and Mautuma Secondary School. These labs, stocked with over 120 desktop computers, were connected to electricity and internet and pre-installed with curriculum-aligned content from the Kenya Institute of Curriculum Development (KICD). Students now actively learn digital literacy, word processing, spreadsheet use, and coding basics, especially in Form 1–4 and vocational classes. The initiative has enhanced ICT integration into teaching and learning, supported teacher capacity-building, and contributed to better KCSE computer studies results. Each school also received maintenance training and tech support from the constituency’s digital team to ensure sustainability and functionality.
+    </p>
+  </div>
+
+  <!-- Mobile ICT Outreach Vans -->
+  <div class="project" style="max-width: 900px; margin: 30px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+    <h3>Mobile ICT Outreach Vans</h3>
+    <p>
+      To bridge the digital divide in remote areas of Lugari, two state-of-the-art Mobile ICT Outreach Vans were commissioned in September 2023. These vans, retrofitted with laptops, routers, printers, and solar charging systems, travel across all wards on a rotating weekly basis. Trained digital instructors offer free lessons in basic computing, email setup, online safety, eCitizen services, digital marketing, and government job applications. The program primarily targets youth, women’s groups, and small business owners who previously lacked access to ICT training centers. Since the rollout, more than 1,200 residents have received hands-on digital literacy training. The vans have become a mobile classroom on wheels, transforming dusty field setups into modern tech hubs and connecting the most marginalized to Kenya's growing digital economy.
+    </p>
+  </div>
+
+  <!-- Ward Digital Hubs -->
+  <div class="project" style="max-width: 900px; margin: 30px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+    <h3>Ward Digital Hubs</h3>
+    <p>
+      To support continuous digital access and youth empowerment, Hon. Nabwera established permanent Digital Hubs in every ward across Lugari Constituency. Each hub is fitted with 15 high-performance computers, broadband internet, printers, Wi-Fi routers, and basic office equipment. These centers operate daily and are managed by trained youth interns from local communities. The hubs serve as free training zones for digital literacy, online job skills, computer applications, and access to e-government services like HELB applications, NHIF registration, KRA PIN generation, and Huduma Namba updates. Monthly, over 150 young people utilize each hub. Additionally, partnerships with NGOs and the ICT Authority have enabled certified training programs in data entry, transcription, and digital freelancing, opening up opportunities for remote online work. These hubs are a critical pillar of Lugari’s vision to become a digitally empowered constituency by 2030.
+    </p>
+  </div>
+</div>
+
+
+<div class="project-section" style="max-width: 1000px; margin: 50px auto;">
+  <h2 style="text-align: center; font-size: 28px; margin-bottom: 30px; border-bottom: 2px solid #ccc; padding-bottom: 10px; color: #333;">
+    Security
+  </h2>
+
+  <!-- CCTV and Floodlights -->
+  <div class="project" style="max-width: 900px; margin: 30px auto; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+    <h3>CCTV and Floodlights</h3>
+    <p>
+      Hon. Nabii Nabwera supplied CCTV cameras and security lights, significantly boosting safety at Chimoi Market and making it more secure for business. 
+      He has also promised additional improvements, including the installation of high-mast security floodlights currently in progress.
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 10px;">
+      <img src="light.jpg" alt="Security Light 1" style="width: 280px; height: auto; border-radius: 8px;" />
+      <img src="light2.jpg" alt="Security Light 2" style="width: 280px; height: auto; border-radius: 8px;" />
+    </div>
+  </div>
+
+  <!-- Local Administration -->
+  <div class="project" style="max-width: 900px; margin: 30px auto; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+    <h3>Collaboration with the Local Administration</h3>
+    <p>
+      Hon. Nabwera has worked closely with local administrators and police stations to enhance community policing 
+      and streamline reporting mechanisms.
+    </p>
+    <img src="local.jpg" alt="Hon. Nabii Nabwera with local administration" 
+         style="width: 100%; max-width: 600px; height: auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); margin: 10px auto; display: block;" />
+  </div>
+</div>
+
+<!-- Existing Project Sections -->
+<div class="project-section" style="max-width: 1000px; margin: 50px auto;">
+  <h2 style="text-align: center; font-size: 28px; margin-bottom: 30px; border-bottom: 2px solid #ccc; padding-bottom: 10px; color: #333;">
+    Roads & Market Infrastructure
+  </h2>
+
+  <!-- Panpaper Market -->
+  <div class="project" style="max-width: 900px; margin: 30px auto; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+    <h3>Panpaper Modern Market</h3>
+    <p>
+      Constructing 200 new market stalls with roofing, solar lighting, and an ICT corner. Over 1,200 traders and 
+      daily shoppers benefit from the upgraded structure.
+    </p>
+    <img src="panpaper.jpg" alt="Panpaper Market" 
+         style="width: 100%; max-width: 600px; height: auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); margin: 10px auto; display: block;" />
+  </div>
+
+  <!-- Chekalini Market -->
+  <div class="project" style="max-width: 900px; margin: 30px auto; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+    <h3>Chekalini Market</h3>
+    <p>
+      Built 80 stalls, paved walkways, and installed solar lighting. Traders report a 25% increase in revenue due to extended business hours and improved sanitation.
+    </p>
+    <img src="chekalini.jpg" alt="Chekalini Market" 
+         style="width: 100%; max-width: 600px; height: auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); margin: 10px auto; display: block;" />
+  </div>
+
+  <!-- Turbo–Sikhendu Tarmac Project -->
+  <div class="project" style="max-width: 900px; margin: 30px auto; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+    <h3>Routine Maintenance of Road and Turbo–Sikhendu Tarmac Project</h3>
+    <p>
+      Gravel upgraded and graded 8 km stretch, connecting rural farmers to Panpaper Market and easing produce transport during rainy seasons.
+      The most important project is the initiation of a bitumen road that will connect Turbo and Sikhendu.
+    </p>
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 10px;">
+      <img src="road1.jpg" alt="Musembe Road" style="width: 280px; height: auto; border-radius: 8px;" />
+      <img src="road2.jpg" alt="Turbo Road" style="width: 280px; height: auto; border-radius: 8px;" />
+      <img src="road3.jpg" alt="Sikhendu Road" style="width: 280px; height: auto; border-radius: 8px;" />
+    </div>
+  </div>
+</div>
+
+<!-- Agriculture & Food Security -->
+<div class="project-section" style="max-width: 1000px; margin: 50px auto;">
+  <h2 style="text-align: center; font-size: 28px; margin-bottom: 30px; border-bottom: 2px solid #ccc; padding-bottom: 10px; color: #333;">
+    Agriculture & Food Security
+  </h2>
+
+  <!-- Chevaywa TVC Demo Farm -->
+  <div class="project" style="max-width: 900px; margin: 30px auto; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+    <h3>Chevaywa TVC Demo Farm</h3>
+    <p>
+      Launched a model farm with drip irrigation, greenhouses, and fish ponds. 
+      Over 500 local farmers trained in best practices and agribusiness operations.
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 10px;">
+      <img src="green1.jpg" alt="Demo Farm Main" style="width: 280px; height: auto; border-radius: 8px;" />
+      <img src="green2.jpg" alt="Greenhouse" style="width: 280px; height: auto; border-radius: 8px;" />
+      <img src="fish.jpg" alt="Fish Pond" style="width: 280px; height: auto; border-radius: 8px;" />
+    </div>
+  </div>
+
+  <!-- Solar Water Pumps -->
+  <div class="project" style="max-width: 900px; margin: 30px auto; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+    <h3>Solar Water Pumps</h3>
+    <p>
+      Donated 200 solar irrigation pumps to organized groups. Enabled dry season farming 
+      in Kongoni, Chekalini, and Lumakanda zones.
+    </p>
+    <img src="solar1.jpg" alt="Solar Water Pumps" 
+         style="width: 100%; max-width: 500px; height: auto; display: block; margin: 10px auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+  </div>
+</div>
+
+<!-- Electric Connectivity -->
+<div class="project-section" style="max-width: 1000px; margin: 50px auto;">
+  <h2 style="text-align: center; font-size: 28px; margin-bottom: 30px; border-bottom: 2px solid #ccc; padding-bottom: 10px; color: #333;">
+    Electric Connectivity
+  </h2>
+
+  <div class="project" style="max-width: 900px; margin: 30px auto; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+    <h3>Lighting Up Lugari</h3>
+    <p>
+      Under the leadership of Hon. Nabii Nabwera, Lugari Subcounty has experienced a major transformation in electricity access. 
+      More than 45 rural schools and public institutions have been connected to the national grid, improving learning environments and administrative operations. 
+      Households across wards like Lumakanda, Mautuma, and Chekalini have benefited from last-mile electricity connections, thanks to partnerships with the Rural Electrification and Renewable Energy Corporation (REREC) and Kenya Power.
+    </p>
+    <p>
+      Additionally, through the National Government Constituency Development Fund (NG-CDF), Hon. Nabwera has facilitated solar lighting projects in key trading centers and newly constructed health facilities. These initiatives are reducing reliance on kerosene lamps, improving business hours for traders, and enabling safer, more productive communities. 
+    </p>
+    <p>
+      Notably, 3,000+ households have gained direct access to electricity since 2022, with ongoing surveys and transformers being installed in off-grid villages. This aligns with his long-term vision of a digitally connected, economically empowered Lugari.
+    </p>
+
+    <video controls style="width: 100%; max-width: 600px; height: auto; margin: 20px auto 10px; display: block; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+      <source src="power.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<div class="project-section" style="max-width: 1000px; margin: 50px auto;">
+  <h2 style="text-align: center; font-size: 28px; margin-bottom: 30px; border-bottom: 2px solid #ccc; padding-bottom: 10px; color: #333;">
+    Youth Empowerment, Sports & Environment
+  </h2>
+
+  <div class="project" style="max-width: 900px; margin: 30px auto; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+    <h3>Lugari Football League</h3>
+    <p>
+      Supplied full kits, balls, trophies, and technical training to all wards. Over 700 youth engaged. 
+      Area crime reduced by 18% during league periods.
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 10px;">
+      <img src="league.jpg" alt="Football League 1" style="width: 220px; height: auto; border-radius: 8px;" />
+      <img src="league2.jpg" alt="Football League 2" style="width: 220px; height: auto; border-radius: 8px;" />
+      <img src="league3.jpg" alt="Football League 3" style="width: 220px; height: auto; border-radius: 8px;" />
+      <img src="league4.jpg" alt="Football League 4" style="width: 220px; height: auto; border-radius: 8px;" />
+    </div>
+  </div>
+</div>
+
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>About Lugari</h3>
+      <p>Lugari is one of Kakamega’s fastest-growing constituencies, driven by innovation, youth, agriculture, and community spirit.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About the MP</a></li>
+        <li><a href="vision.html">Vision & Mission</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="super.html">Super 5G Miracles</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">your thoughts</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Info</h3>
+      <p>Email: info@lugari.go.ke</p>
+      
+      <p>Office: Lumakanda Town, Kakamega County</p>
+
+      <p style="margin-top: 10px;">For more updates, follow <strong>Hon. Nabii Nabwera</strong>:</p>
+      <div class="social-icons" style="margin-top: 10px;">
+        <a href="https://www.facebook.com/share/15csqeqcZ2/?mibextid=qi2Omg" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/nabiinabwera5G?t=G8dA5z8mrC1on9ww73ViDg&s=09" target="_blank" title="X (formerly Twitter)"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.tiktok.com/@nabiinabwera?_t=ZM-8xw3lTtzjtA&_r=1" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/hon.nabweranabiioffial1?igsh=YzljYTk1ODg3Zg==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Lugari Constituency | Hon. Nabii Nabwera | Powered by ODM Kenya
+  </div>
+</footer>
+
+<!-- Font Awesome CDN (Include in <head> of your HTML file if not already included) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</body>
+</html>

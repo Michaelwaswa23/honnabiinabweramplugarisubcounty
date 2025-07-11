@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Development Projects – Hon. Nabii Nabwera</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    nav {
+      background-color: #ff6a00;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    nav h2 {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding-left: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #ffe1c6;
+    }
+
+    .header {
+      background: #fff3e6;
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    .header h1 {
+      font-size: 2.4rem;
+      color: #ff6a00;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      color: #d84e00;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .chart-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .chart-container canvas {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      margin-top: 60px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .footer-section {
+      flex: 1;
+      min-width: 250px;
+      margin-bottom: 20px;
+    }
+
+    .footer-section h3 {
+      color: #fff;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-section ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons a {
+      margin-right: 15px;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding: 10px;
+      color: #ccc;
+      border-top: 1px solid #444;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .header h1 {
+        font-size: 1.8rem;
+      }
+      .chart-container canvas {
+        max-width: 100%;
+      }
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer-section {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h2>Hon. Nabii Nabwera</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="vision.html">Vision & Mission</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="super.html">Super 5G Miracles</a></li>
+    <li><a href="contact.html">Your Thoughts</a></li>
+  </ul>
+</nav>
+
+<div class="header">
+  <h1>SUPER 5G MIRACLES</h1>
+  <p>Every project. Every ward. Every citizen uplifted.</p>
+</div>
+
+<!-- Charts Section -->
+<div class="section chart-container">
+  <h2>Projects by Ward</h2>
+  <canvas id="barChart"></canvas>
+</div>
+
+<div class="section chart-container">
+  <h2>Budget Allocation by Sector</h2>
+  <canvas id="pieChart"></canvas>
+</div>
+
+<div class="section chart-container">
+  <h2>Performance Rankings</h2>
+  <canvas id="rankKenya"></canvas>
+  <canvas id="rankKakamega" style="margin-top: 40px;"></canvas>
+  <canvas id="rankComparison" style="margin-top: 40px;"></canvas>
+</div>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>About Lugari</h3>
+      <p>Lugari is one of Kakamega’s fastest-growing constituencies, driven by innovation, youth, agriculture, and community spirit.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About the MP</a></li>
+        <li><a href="vision.html">Vision & Mission</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="super.html">Super 5G Miracles</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Your Thoughts</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Contact Info</h3>
+      <p>Email: info@lugari.go.ke</p>
+      <p>Office: Lumakanda Town, Kakamega County</p>
+      <p>Follow Hon. Nabii Nabwera:</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/15csqeqcZ2/?mibextid=qi2Omg" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/nabiinabwera5G?t=G8dA5z8mrC1on9ww73ViDg&s=09" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.tiktok.com/@nabiinabwera?_t=ZM-8xw3lTtzjtA&_r=1" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/hon.nabweranabiioffial1?igsh=YzljYTk1ODg3Zg==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Lugari Constituency | Hon. Nabii Nabwera | Powered by ODM Kenya
+  </div>
+</footer>
+
+<script>
+  new Chart(document.getElementById('barChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Lumakanda', 'Lugari', 'Mautuma', 'Lwandeti', 'Chekalini', 'Chevaywa'],
+      datasets: [{
+        label: 'Projects Implemented',
+        data: [9, 11, 10, 8, 7, 6],
+        backgroundColor: '#ff6a00'
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: { beginAtZero: true }
+      }
+    }
+  });
+
+  new Chart(document.getElementById('pieChart'), {
+    type: 'pie',
+    data: {
+      labels: ['Lumakanda', 'Lugari', 'Mautuma', 'Lwandeti', 'Chekalini', 'Chevaywa'],
+      datasets: [{
+        data: [30, 20, 15, 10, 15, 10],
+        backgroundColor: ['#ff6a00', '#ff9240', '#ffd1a6', '#ffa347', '#d84e00', '#ffdfbf']
+      }]
+    },
+    options: {
+      responsive: true
+    }
+  });
+
+  new Chart(document.getElementById('rankKenya'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Top 10 MPs (Nabii)', 'Others'],
+      datasets: [{
+        data: [1, 349],
+        backgroundColor: ['#ff6a00', '#ccc']
+      }]
+    },
+    options: {
+      plugins: { title: { display: true, text: 'National Rank: Top 10 of 350 MPs' } },
+      responsive: true
+    }
+  });
+
+  new Chart(document.getElementById('rankKakamega'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Top 1 in Kakamega (Nabii)', 'Others'],
+      datasets: [{
+        data: [1, 11],
+        backgroundColor: ['#ffa347', '#ccc']
+      }]
+    },
+    options: {
+      plugins: { title: { display: true, text: 'County Rank: 1st of 12 MPs in Kakamega' } },
+      responsive: true
+    }
+  });
+
+  new Chart(document.getElementById('rankComparison'), {
+    type: 'bar',
+    data: {
+      labels: ['Nabii Nabwera', 'Best Former MP(hon.omboka milemba)', 'Average MP'],
+      datasets: [{
+        label: 'Performance Score (Out of 10)',
+        data: [9.4, 9.6, 7.5],
+        backgroundColor: ['#d84e00', '#ff6a00', '#bbb']
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: 'Performance Comparison with Former High-performing MPs'
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: 10
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>

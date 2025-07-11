@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Hon. Nabii Nabwera</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    nav, footer {
+      background-color: #ff6a00;
+      color: white;
+      padding: 20px;
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      gap: 15px;
+      padding-left: 0;
+      margin: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .header {
+      background: #fff3e6;
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    .header h1 {
+      font-size: 2.2rem;
+      color: #ff6a00;
+    }
+    .contact-form, .comment-display {
+      width: 90%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff5e6;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .contact-form h2 {
+      color: #d84e00;
+      margin-bottom: 20px;
+    }
+    .contact-form label {
+      display: block;
+      margin-top: 10px;
+    }
+    .contact-form input, .contact-form textarea, .contact-form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ff6a00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #e65c00;
+    }
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .footer-section {
+      flex: 1;
+      min-width: 250px;
+      margin-bottom: 20px;
+    }
+    .footer-section h3 {
+      color: #fff;
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-section ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    .footer-section ul li a:hover {
+      text-decoration: underline;
+    }
+    .social-icons a {
+      margin-right: 15px;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+    .footer-bottom {
+      text-align: center;
+      padding: 10px;
+      color: #ccc;
+      border-top: 1px solid #444;
+    }
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 1.8rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .contact-form, .comment-display {
+        padding: 15px;
+      }
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer-section {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="vision.html">Vision & Mission</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="super.html">Super 5G Miracles</a></li>
+    <li><a href="contact.html">Your Thoughts</a></li>
+  </ul>
+</nav>
+
+<div class="header">
+  <h1>Let Us Know What You Think</h1>
+  <p>Your voice shapes Lugari's future. Share your thoughts, ideas, or concerns below.</p>
+</div>
+
+<div class="contact-form">
+  <h2>Leave a Comment</h2>
+  <form id="commentForm">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="ward">Your Ward:</label>
+    <select id="ward" required>
+      <option value="">--Select Ward--</option>
+      <option value="Lumakanda">Lumakanda</option>
+      <option value="Mautuma">Mautuma</option>
+      <option value="Lwandeti">Lwandeti</option>
+      <option value="Chekalini">Chekalini</option>
+      <option value="Chevaywa">Chevaywa</option>
+      <option value="Lugari">Lugari</option>
+    </select>
+
+    <label for="comment">Your Comment:</label>
+    <textarea id="comment" rows="5" required></textarea>
+
+    <button type="submit">Post Comment</button>
+  </form>
+</div>
+
+<div class="comment-display" id="displayComments">
+  <h3>Recent Comments:</h3>
+  <div id="commentsContainer"></div>
+</div>
+
+<footer style="background-color: #000; color: #fff;">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>About Lugari</h3>
+      <p>Lugari is one of Kakamega’s fastest-growing constituencies, driven by innovation, youth, agriculture, and community spirit.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About the MP</a></li>
+        <li><a href="vision.html">Vision & Mission</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="super.html">Super 5G Miracles</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Your Thoughts</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Contact Info</h3>
+      <p>Email: info@lugari.go.ke</p>
+      <p>Office: Lumakanda Town, Kakamega County</p>
+      <p>Follow Hon. Nabii Nabwera:</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/15csqeqcZ2/?mibextid=qi2Omg" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/nabiinabwera5G?t=G8dA5z8mrC1on9ww73ViDg&s=09" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.tiktok.com/@nabiinabwera?_t=ZM-8xw3lTtzjtA&_r=1" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/hon.nabweranabiioffial1?igsh=YzljYTk1ODg3Zg==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Lugari Constituency | Hon. Nabii Nabwera | Powered by ODM Kenya
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyC9U7A_sCdOrs7fxfQ2wpYl4_KMBUd3dzw",
+    authDomain: "lugari254.firebaseapp.com",
+    databaseURL: "https://lugari254-default-rtdb.firebaseio.com",
+    projectId: "lugari254",
+    storageBucket: "lugari254.appspot.com",
+    messagingSenderId: "5820478382",
+    appId: "1:5820478382:web:c71316231c1409782d0e3f",
+    measurementId: "G-T9T1SMKGJY"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.database();
+  const commentsRef = db.ref("comments");
+
+  const form = document.getElementById('commentForm');
+  const commentsContainer = document.getElementById('commentsContainer');
+
+  function addCommentToDOM(commentData) {
+    const commentDiv = document.createElement('div');
+    commentDiv.style.borderTop = '1px solid #ccc';
+    commentDiv.style.padding = '10px 0';
+    commentDiv.innerHTML = `
+      <strong>${commentData.name}</strong> (${commentData.ward})<br>
+      ${commentData.comment}<br>
+      <small style="color:gray;">${commentData.timestamp}</small>
+    `;
+    commentsContainer.prepend(commentDiv);
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const ward = document.getElementById('ward').value;
+    const comment = document.getElementById('comment').value;
+    const timestamp = new Date().toLocaleString('en-KE', {
+      dateStyle: 'medium',
+      timeStyle: 'short'
+    });
+
+    const commentData = { name, ward, comment, timestamp };
+    await commentsRef.push(commentData);
+    addCommentToDOM(commentData);
+    form.reset();
+  });
+
+  commentsRef.on('value', (snapshot) => {
+    commentsContainer.innerHTML = '';
+    const data = snapshot.val();
+    if (data) {
+      const entries = Object.values(data).reverse();
+      entries.forEach(addCommentToDOM);
+    }
+  });
+</script>
+
+</body>
+</html>
